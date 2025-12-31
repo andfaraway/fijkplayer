@@ -106,10 +106,6 @@ public class FijkPlugin implements MethodCallHandler, FlutterPlugin, ActivityAwa
             }
         });
 
-        final FijkPlayer player = new FijkPlayer(this, true);
-        player.setupSurface();
-        player.release();
-
         AudioManager audioManager = audioManager();
         if (audioManager != null) {
             int max = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
